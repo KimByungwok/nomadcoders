@@ -202,7 +202,7 @@ console.log(krAge);
 
 */
 
-
+/*
 
 const age = parseInt(prompt("몇 살이야? ")) // 스캐너 같은 기능 (넘어가기 전까지 javascript 기능이 멈춤)
 
@@ -224,3 +224,14 @@ if (isNaN(age)){
 }else{
     console.log("음주 하기엔 너무 늙었온");
 }
+*/
+
+
+const title = document.getElementsByClassName("hello");
+
+title.innerText = "Got you";
+
+console.log(title.id);
+console.log(title.className);
+
+
