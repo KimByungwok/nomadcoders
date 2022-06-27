@@ -224,14 +224,32 @@ if (isNaN(age)){
 }else{
     console.log("음주 하기엔 너무 늙었온");
 }
+
+
+const title = document.getElementById("title");
+
+title.innerText = "Got you!";
+
+console.log(title.className);
+
+const title = document.getElementsByTagName("h1");
+
+console.log(title);
+
 */
 
+const title = document.querySelector("div.hello:first-child h1"); // #hello:first-child
 
-const title = document.getElementsByClassName("hello");
+function hangleTitleClick() {
+    console.log("title was clicked");
+    title.style.color="blue";
+}
 
-title.innerText = "Got you";
+title.addEventListener("click", hangleTitleClick);
 
-console.log(title.id);
-console.log(title.className);
+
+
+
+
 
 
