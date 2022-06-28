@@ -202,7 +202,7 @@ console.log(krAge);
 
 */
 
-
+/*
 
 const age = parseInt(prompt("몇 살이야? ")) // 스캐너 같은 기능 (넘어가기 전까지 javascript 기능이 멈춤)
 
@@ -224,3 +224,32 @@ if (isNaN(age)){
 }else{
     console.log("음주 하기엔 너무 늙었온");
 }
+
+
+const title = document.getElementById("title");
+
+title.innerText = "Got you!";
+
+console.log(title.className);
+
+const title = document.getElementsByTagName("h1");
+
+console.log(title);
+
+*/
+
+const title = document.querySelector("div.hello:first-child h1"); // #hello:first-child
+
+function hangleTitleClick() {
+    console.log("title was clicked");
+    title.style.color="blue";
+}
+
+title.addEventListener("click", hangleTitleClick);
+
+
+
+
+
+
+
